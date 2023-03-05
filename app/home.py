@@ -5,6 +5,29 @@ import time
 from PIL import Image
 
 ai.api_key = st.secrets.apikey
+st.set_page_config(layout= 'wide', page_icon='camera', page_title='Best Post')
+
+CSS =  """
+    .stApp {
+        background-color: white;
+    }
+    .stMenu {
+        background-color: red;
+    }
+    h1, h2, h3, h4 {
+        color: rgba(12, 53, 157, 0.741);
+    }
+    h5, h6{
+        color: #70c698;
+    }
+    p {
+        font-size: 16px;
+        color: #70c698;
+    }
+"""
+
+st.markdown(f'<style>{CSS}</style>', unsafe_allow_html=True)
+
 
 image = Image.open('data/Captura de Pantalla 2023-03-04 a la(s) 14.40.01.png')
 st.image(image)
@@ -36,7 +59,7 @@ def generate_gpt3_response(user_text, print_output=False):
     # Return the first choice's text
     return completions.choices[0].text
 
-st.markdown('## Bienvenido a Jasper!! (original)')
+st.markdown('# Bienvenido a Jasper!! (original)')
 st.markdown('\n #### Comienza a generar las mejores descripciones para tus fotos de instagram')
 
 photo = st.file_uploader('Ingrese su foto')
