@@ -32,7 +32,7 @@ CSS =  """
 st.markdown(f'<style>{CSS}</style>', unsafe_allow_html=True)
 
 
-image = Image.open('data/Captura de Pantalla 2023-03-04 a la(s) 14.40.01.png')
+image = Image.open('data/logo.jpeg')
 st.image(image)
 
 
