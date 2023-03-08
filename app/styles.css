@@ -1,10 +1,17 @@
-body {
-    background-color: #70c698;
-}
-h1 {
-    color: rgba(12, 53, 157, 0.741);
-    font-size: 36px;
-}
-p {
-    font-size: 24px;
-}
+
+    .stApp {
+        background-color: white;
+    }
+    .stMenu {
+        background-color: red;
+    }
+    h1, h2, h3, h4 {
+        color: rgba(12, 53, 157, 0.741);
+    }
+    h5, h6{
+        color: #70c698;
+    }
+    p {
+        font-size: 16px;
+        color: #70c698;
+    }
